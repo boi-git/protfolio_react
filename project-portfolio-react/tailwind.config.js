@@ -7,6 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      width: {
+        "fill-available": "-webkit-fill-available",
+      },
+      height: {
+        "fill-available": "-webkit-fill-available",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
