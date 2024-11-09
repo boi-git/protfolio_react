@@ -3,7 +3,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="w-full py-16 bg-white flex-col justify-start items-start inline-flex">
-      <div className="w-full px-[200px] flex-col justify-center items-center inline-flex">
+      {/*Nav*/}
+      <div className="w-full px-[16px] sm:px-[32px] lg:px-[200px] flex-col justify-center items-center inline-flex">
         <div className="self-stretch px-16 py-8 bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] justify-between items-center inline-flex">
           <div className="text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-normal">
             Home
@@ -22,6 +23,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/*First Row*/}
       <div className="w-full px-[16px] sm:px-[32px] lg:px-[200px] pt-8 grid grid-cols-12 gap-8">
         <div className="h-auto col-span-12 sm:col-span-12 lg:col-span-4 p-8 bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] flex-col justify-start items-start gap-8 inline-flex">
           <div className="self-stretch justify-start items-center gap-8 inline-flex">
@@ -65,9 +68,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-full justify-start items-start gap-8 grid grid-cols-12">
-            <div className="rounded-[10px] shadow-xl border border-[#c9c9c9] col-span-6 h-fill-available bg-[url('https://via.placeholder.com/485x240')] bg-cover bg-center"></div>
-            <div className="flex-col justify-center items-start gap-8 inline-flex col-span-6">
+          <div className="w-full h-full justify-start items-start gap-8 grid grid-cols-12">
+            <div className="rounded-[10px] shadow-xl border border-[#c9c9c9] col-span-12 sm:col-span-12 lg:col-span-6 min-h-[240px] sm:min-h-[240px] h-full bg-[url('https://via.placeholder.com/485x240')] bg-cover bg-center"></div>
+
+            <div className="flex-col justify-center items-start gap-8 inline-flex col-span-12 sm:col-span-12 lg:col-span-6">
               <div className="self-stretch p-8 bg-white rounded-[10px] shadow border border-[#c9c9c9] justify-start items-center inline-flex gap-4">
                 <div className="flex-grow flex-col justify-start items-start inline-flex">
                   <div className="text-[#3a3a3a] text-[13px] font-normal font-['Poppins'] leading-none">
@@ -98,6 +102,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="w-full px-[16px] sm:px-[32px] lg:px-[200px] pt-8 grid grid-cols-12 gap-8">
         <div className="col-span-12 sm:col-span-12 lg:col-span-6 flex-col justify-start items-start gap-8 inline-flex grid grid-cols-12">
           <div className="col-span-4 flex-col justify-start items-start gap-8 inline-flex">
