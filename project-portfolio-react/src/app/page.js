@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="w-full py-16 bg-white flex-col justify-start items-start inline-flex">
-      <div className="w-full px-[200px] pb-16 flex-col justify-center items-center inline-flex">
+      <div className="w-full px-[200px] flex-col justify-center items-center inline-flex">
         <div className="self-stretch px-16 py-8 bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] justify-between items-center inline-flex">
           <div className="text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-normal">
             Home
@@ -237,7 +237,7 @@ export default function Home() {
           </div>
           <div className="col-span-10 h-full flex p-8 rounded-[10px] flex-col justify-end items-start inline-flex">
             <div className="justify-between items-start inline-flex w-full ">
-              <div className="flex-col justify-start items-start gap-2.5 inline-flex ">
+              <div className="flex-col justify-start items-start gap-2.5 inline-flex  ">
                 <div className="flex-col justify-end items-start flex w-full">
                   <div className="text-white text-[13px] font-normal font-['Poppins'] leading-none">
                     Project
@@ -264,7 +264,127 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div>this is footer</div>
+      <div className="w-full px-[16px] sm:px-[32px] lg:px-[200px] pt-8 grid grid-cols-12 gap-8">
+        <div className="col-span-12 p-8 bg-white rounded-[10px] shadow border border-[#c9c9c9] justify-between items-center flex">
+          <div className="grow shrink basis-0 h-6 justify-start items-start gap-16 flex">
+            <div className="text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-normal">
+              UI/UX Designer{" "}
+            </div>
+            <div className="text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-normal">
+              Frontend Developer
+            </div>
+            <div className="text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-normal">
+              Prototyping
+            </div>
+            <div className="text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-normal">
+              Portfolio
+            </div>
+            <div className="text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-normal">
+              UI/UX Designer{" "}
+            </div>
+            <div className="text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-normal">
+              Frontend Developer
+            </div>
+            <div className="text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-normal">
+              Prototyping
+            </div>
+            <div className="text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-normal">
+              Portfolio
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="w-full pt-8 px-[16px] sm:px-[32px] lg:px-[200px] justify-start items-center gap-8 inline-flex">
+        <div className="h-[600px] w-full p-4 bg-black/50 rounded-[25px] shadow-xl border border-[#c9c9c9] flex-col justify-end items-center inline-flex">
+          <div className="self-stretch justify-between items-center inline-flex">
+            <div className="text-center text-white text-xl font-normal font-['Poppins'] leading-normal">
+              UI/UX Design
+            </div>
+            <div className="w-[50px] h-[50px] bg-[#a1a1a1] rounded-[100px] flex-col justify-center items-center gap-2.5 inline-flex">
+              <div className="text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-normal">
+                01
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="h-[600px] p-4 bg-white rounded-[50px] shadow-xl border border-[#c9c9c9] flex flex-col justify-center items-center relative">
+          <div className="absolute inset-y-0 flex items-center">
+            <div className="-rotate-90 text-center text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-normal whitespace-nowrap">
+              Web Design
+            </div>
+          </div>
+          <div className="w-[50px] h-[50px] bg-[#a1a1a1] rounded-full flex justify-center items-center text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-normal mt-auto">
+            02
+          </div>
+        </div>
+        <div className="h-[600px] p-4 bg-white rounded-[50px] shadow-xl border border-[#c9c9c9] flex flex-col justify-center items-center relative">
+          <div className="absolute inset-y-0 flex items-center">
+            <div className="-rotate-90 text-center text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-normal whitespace-nowrap">
+              App Design
+            </div>
+          </div>
+          <div className="w-[50px] h-[50px] bg-[#a1a1a1] rounded-full flex justify-center items-center text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-normal mt-auto">
+            03
+          </div>
+        </div>
+        <div className="h-[600px] p-4 bg-white rounded-[50px] shadow-xl border border-[#c9c9c9] flex flex-col justify-center items-center relative">
+          <div className="absolute inset-y-0 flex items-center">
+            <div className="-rotate-90 text-center text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-normal whitespace-nowrap">
+              Frontend
+            </div>
+          </div>
+          <div className="w-[50px] h-[50px] bg-[#a1a1a1] rounded-full flex justify-center items-center text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-normal mt-auto">
+            04
+          </div>
+        </div>
+        <div className="h-[600px] p-4 bg-white rounded-[50px] shadow-xl border border-[#c9c9c9] flex flex-col justify-center items-center relative">
+          <div className="absolute inset-y-0 flex items-center">
+            <div className="-rotate-90 text-center text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-normal whitespace-nowrap">
+              Poster
+            </div>
+          </div>
+          <div className="w-[50px] h-[50px] bg-[#a1a1a1] rounded-full flex justify-center items-center text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-normal mt-auto">
+            05
+          </div>
+        </div>
+        <div className="h-[600px] p-4 bg-white rounded-[50px] shadow-xl border border-[#c9c9c9] flex flex-col justify-center items-center relative">
+          <div className="absolute inset-y-0 flex items-center">
+            <div className="-rotate-90 text-center text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-normal whitespace-nowrap">
+              Fitness
+            </div>
+          </div>
+          <div className="w-[50px] h-[50px] bg-[#a1a1a1] rounded-full flex justify-center items-center text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-normal mt-auto">
+            06
+          </div>
+        </div>
+      </div>
+      <div className="w-full pt-8 px-[200px] flex flex-col items-center justify-center gap-4 md:h-24 md:flex-row">
+        <div className="self-stretch w-full px-16 py-8 bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] justify-center items-center inline-flex">
+          {" "}
+          <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
+            Built by{" "}
+            <a
+              href="https://github.com/BUE221"
+              target="_blank"
+              rel="noreferrer"
+              className="font-medium underline underline-offset-4"
+            >
+              Aizat
+            </a>
+            . with <span className="text-red-500">❤️</span> using React and
+            Tailwind CSS. The source code is available on{" "}
+            <a
+              href="https://github.com/bue221"
+              target="_blank"
+              rel="noreferrer"
+              className="font-medium underline underline-offset-4"
+            >
+              GitHub
+            </a>
+            .
+          </p>{" "}
+        </div>
+      </div>
     </div>
   );
 }
