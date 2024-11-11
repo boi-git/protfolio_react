@@ -103,19 +103,22 @@ export default function Home() {
         </div>
       </div>
 
+      {/*Second Row*/}
       <div className="w-full px-[16px] sm:px-[32px] lg:px-[200px] pt-8 grid grid-cols-12 gap-8">
         <div className="col-span-12 sm:col-span-12 lg:col-span-6 flex-col justify-start items-start gap-8 inline-flex grid grid-cols-12">
-          <div className="col-span-4 flex-col justify-start items-start gap-8 inline-flex">
-            <div className="h-[150px] w-full bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] justify-start items-center inline-flex">
+          {/* <div className="col-span-12 sm:col-span-12 lg:col-span-4 flex-col justify-start items-start gap-8 inline-flex"> */}
+          <div className="col-span-12 sm:col-span-12 lg:col-span-4 grid grid-cols-12 gap-8">
+            <div className="col-span-6 lg:col-span-12 h-[150px] w-full bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] justify-start items-center inline-flex">
               <div className="justify-center items-center flex"></div>
             </div>
-            <div className="h-[150px] w-full bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] justify-start items-center inline-flex">
+            <div className="col-span-6 lg:col-span-12 h-[150px] w-full bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] justify-start items-center inline-flex">
               <div className="justify-center items-center flex"></div>
             </div>
-            <div className="h-[150px] w-full bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] justify-start items-center inline-flex">
+            <div className="col-span-6 lg:col-span-12 h-[150px] w-full bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] justify-start items-center inline-flex">
               <div className="justify-center items-center flex"></div>
             </div>
           </div>
+
           <div className="h-full col-span-8 flex-col justify-start items-start gap-8 inline-flex">
             <div className="flex-grow  w-full p-8 bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] flex-col justify-start items-start inline-flex">
               <div className="justify-start items-center gap-8 inline-flex">
@@ -222,6 +225,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="w-full pt-8 justify-start items-center gap-8 inline-flex">
         <div className="h-[650px] px-[200px] flex-grow py-8 bg-black/50 justify-start items-center gap-8 inline-flex grid grid-cols-12">
           <div className="h-full col-span-2 flex-col justify-start items-start gap-8 inline-flex overflow-hidden">
