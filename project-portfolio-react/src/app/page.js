@@ -106,11 +106,11 @@ export default function Home() {
       {/*Second Row*/}
       <div className="w-full px-[16px] sm:px-[32px] lg:px-[200px] pt-8 grid grid-cols-12 gap-8">
         <div className="col-span-12 sm:col-span-12 lg:col-span-6 flex-col justify-start items-start gap-8 inline-flex grid grid-cols-12">
-          {/* <div className="col-span-12 sm:col-span-12 lg:col-span-4 flex-col justify-start items-start gap-8 inline-flex"> */}
-          <div className="col-span-12 sm:col-span-12 lg:col-span-4 grid grid-cols-12 gap-8">
-            <div className="col-span-6 lg:col-span-12 h-[150px] w-full bg-white rounded-[10px] shadow-xl border border-[#c9c9c9]"></div>
-            <div className="col-span-6 lg:col-span-12 h-[150px] w-full bg-white rounded-[10px] shadow-xl border border-[#c9c9c9]"></div>
-            <div className="col-span-6 lg:col-span-12 h-[150px] w-full bg-white rounded-[10px] shadow-xl border border-[#c9c9c9]"></div>
+          <div className="col-span-12 sm:col-span-12 lg:col-span-4 grid grid-cols-12 lg:grid-cols-1 sm:grid-cols-12 gap-8">
+            {/* <div className="col-span-12 sm:col-span-12 lg:col-span-4 grid grid-cols-12 gap-8"> */}
+            <div className="col-span-6 h-[150px] bg-white rounded-[10px] shadow-xl border border-[#c9c9c9]"></div>
+            <div className="col-span-6 h-[150px] bg-white rounded-[10px] shadow-xl border border-[#c9c9c9]"></div>
+            <div className="col-span-6 h-[150px] bg-white rounded-[10px] shadow-xl border border-[#c9c9c9]"></div>
           </div>
 
           <div className="h-full col-span-8 flex-col justify-start items-start gap-8 inline-flex">
