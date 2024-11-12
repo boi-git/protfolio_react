@@ -108,15 +108,9 @@ export default function Home() {
         <div className="col-span-12 sm:col-span-12 lg:col-span-6 flex-col justify-start items-start gap-8 inline-flex grid grid-cols-12">
           {/* <div className="col-span-12 sm:col-span-12 lg:col-span-4 flex-col justify-start items-start gap-8 inline-flex"> */}
           <div className="col-span-12 sm:col-span-12 lg:col-span-4 grid grid-cols-12 gap-8">
-            <div className="col-span-6 lg:col-span-12 h-[150px] w-full bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] justify-start items-center inline-flex">
-              <div className="justify-center items-center flex"></div>
-            </div>
-            <div className="col-span-6 lg:col-span-12 h-[150px] w-full bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] justify-start items-center inline-flex">
-              <div className="justify-center items-center flex"></div>
-            </div>
-            <div className="col-span-6 lg:col-span-12 h-[150px] w-full bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] justify-start items-center inline-flex">
-              <div className="justify-center items-center flex"></div>
-            </div>
+            <div className="col-span-6 lg:col-span-12 h-[150px] w-full bg-white rounded-[10px] shadow-xl border border-[#c9c9c9]"></div>
+            <div className="col-span-6 lg:col-span-12 h-[150px] w-full bg-white rounded-[10px] shadow-xl border border-[#c9c9c9]"></div>
+            <div className="col-span-6 lg:col-span-12 h-[150px] w-full bg-white rounded-[10px] shadow-xl border border-[#c9c9c9]"></div>
           </div>
 
           <div className="h-full col-span-8 flex-col justify-start items-start gap-8 inline-flex">
