@@ -167,7 +167,7 @@ export default function Home() {
               {/* <div className="justify-start items-center gap-8 inline-flex"> */}
               <div className="overflow-hidden justify-start items-center gap-8 inline-flex">
                 <div className="marquee flex gap-8">
-                  <div className="w-[150px] h-[150px] bg-[#c9c9c9] rounded-[10px] justify-center items-center flex">
+                  <div className="w-[150px] h-[150px] bg-[#F3F3F3] rounded-[10px] justify-center items-center flex">
                     <div className="flex justify-center items-center p-10">
                       <img
                         src="/img/Figma.svg"
@@ -175,7 +175,7 @@ export default function Home() {
                       />
                     </div>
                   </div>
-                  <div className="w-[150px] h-[150px] bg-[#c9c9c9] rounded-[10px] justify-center items-center flex">
+                  <div className="w-[150px] h-[150px] bg-[#F3F3F3] rounded-[10px] justify-center items-center flex">
                     <div className="flex justify-center items-center p-10">
                       <img
                         src="/img/Flutter.svg"
@@ -183,7 +183,7 @@ export default function Home() {
                       />
                     </div>
                   </div>
-                  <div className="w-[150px] h-[150px] bg-[#c9c9c9] rounded-[10px] justify-center items-center flex">
+                  <div className="w-[150px] h-[150px] bg-[#F3F3F3] rounded-[10px] justify-center items-center flex">
                     <div className="flex justify-center items-center p-10">
                       <img
                         src="/img/Larave.svg"
@@ -191,7 +191,7 @@ export default function Home() {
                       />
                     </div>
                   </div>
-                  <div className="w-[150px] h-[150px] bg-[#c9c9c9] rounded-[10px] justify-center items-center flex">
+                  <div className="w-[150px] h-[150px] bg-[#F3F3F3] rounded-[10px] justify-center items-center flex">
                     <div className="flex justify-center items-center p-10">
                       <img
                         src="/img/react-2.svg"
@@ -199,7 +199,7 @@ export default function Home() {
                       />
                     </div>
                   </div>
-                  <div className="w-[150px] h-[150px] bg-[#c9c9c9] rounded-[10px] justify-center items-center flex">
+                  <div className="w-[150px] h-[150px] bg-[#F3F3F3] rounded-[10px] justify-center items-center flex">
                     <div className="flex justify-center items-center p-10">
                       <img
                         src="/img/Tailwind.svg"
@@ -207,7 +207,7 @@ export default function Home() {
                       />
                     </div>
                   </div>
-                  <div className="w-[150px] h-[150px] bg-[#c9c9c9] rounded-[10px] justify-center items-center flex">
+                  <div className="w-[150px] h-[150px] bg-[#F3F3F3] rounded-[10px] justify-center items-center flex">
                     <div className="flex justify-center items-center p-10">
                       <img
                         src="/img/Vue.svg"
