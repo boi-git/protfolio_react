@@ -1,6 +1,14 @@
-import Image from "next/image";
+"use client";
+
+import { useState } from "react";
 
 export default function Home() {
+  const [copySuccess, setCopySuccess] = useState("");
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText("adhwa.aizat23@gmail.com").then(() => {});
+  };
+
   return (
     <div className="w-full py-8 bg-white flex-col justify-start items-start inline-flex">
       {/*Nav*/}
@@ -74,7 +82,7 @@ export default function Home() {
             {/* <div className="rounded-[10px] shadow-xl border border-[#c9c9c9] col-span-12 sm:col-span-12 lg:col-span-6 min-h-[240px] sm:min-h-[240px] h-full bg-[url('https://via.placeholder.com/485x240')] bg-cover bg-center" ></div> */}
             <div className="rounded-[10px] shadow-xl border border-[#c9c9c9] col-span-12 sm:col-span-12 lg:col-span-6 min-h-[240px] sm:min-h-[240px] h-full">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.003451878537!2d101.6772835759836!3d3.093739753488683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4bf235748dd1%3A0xbe8103163b5b12d1!2sThe%20Hermington%20Kuchai%20Lama!5e0!3m2!1sen!2smy!4v1731471207593!5m2!1sen!2smy"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.9871624141365!2d101.67329157497097!3d3.0980710968775433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4a30fc567561%3A0x6b2c6af57e6450b6!2sOld%20Klang%20Rd%2C%20Kuala%20Lumpur%2C%20Federal%20Territory%20of%20Kuala%20Lumpur!5e0!3m2!1sen!2smy!4v1731483920013!5m2!1sen!2smy"
                 width="100%"
                 height="100%"
                 style={{ border: "0" }}
@@ -95,35 +103,57 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="w-10 h-10 relative">
-                  <span
-                    className="material-symbols-rounded text-[#3a3a3a]"
-                    style={{ fontSize: "40px" }}
+                  <a
+                    href="/resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    visibility
-                  </span>
+                    <span
+                      className="material-symbols-rounded text-[#3a3a3a]"
+                      style={{ fontSize: "40px" }}
+                    >
+                      visibility
+                    </span>
+                  </a>
                 </div>
 
                 <div className="w-10 h-10 relative text-[#3a3a3a]">
-                  <span
-                    className="material-symbols-rounded"
-                    style={{ fontSize: "40px" }}
-                  >
-                    download
-                  </span>
+                  <a href="/resume.pdf" download="Aizat_Resume.pdf">
+                    <span
+                      className="material-symbols-rounded"
+                      style={{ fontSize: "40px" }}
+                    >
+                      download
+                    </span>
+                  </a>
                 </div>
               </div>
 
-              <div className="self-stretch p-8 bg-white rounded-[10px] shadow border border-[#c9c9c9] justify-between items-center inline-flex">
-                <div className="text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-normal">
+              <div className="self-stretch p-8 bg-white rounded-[10px] shadow border border-[#c9c9c9] justify-start items-center inline-flex gap-4">
+                <div className="text-[#3a3a3a] text-xl g-8 flex-grow flex-col justify-start items-start inline-flex">
                   Email
                 </div>
                 <div className="w-10 h-10 relative text-[#3a3a3a]">
+                  <a href="mailto:adhwa.aizat23@gmail.com">
+                    <span
+                      className="material-symbols-rounded"
+                      style={{ fontSize: "40px" }}
+                    >
+                      mail
+                    </span>
+                  </a>
+                </div>
+                <div className="w-10 h-10 relative text-[#3a3a3a]">
                   <span
-                    className="material-symbols-rounded"
+                    className="material-symbols-rounded cursor-pointer"
                     style={{ fontSize: "40px" }}
+                    onClick={copyToClipboard}
                   >
-                    mail
+                    content_copy
                   </span>
+                  {copySuccess && (
+                    <div className="text-sm text-green-500">{copySuccess}</div>
+                  )}
                 </div>
               </div>
             </div>
@@ -136,22 +166,41 @@ export default function Home() {
         <div className="col-span-12 sm:col-span-12 lg:col-span-6 flex-col justify-start items-start gap-8 inline-flex grid grid-cols-12">
           <div className="col-span-12 sm:col-span-12 lg:col-span-4 grid grid-cols-12 lg:grid-cols-1 sm:grid-cols-12 gap-8">
             <div className="col-span-6 h-[150px] bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] flex justify-center items-center p-8">
-              <img
-                src="/img/link_logo.png"
-                className="h-full w-auto object-contain"
-              />
+              <a
+                href="https://www.linkedin.com/in/adhwa-aizat-056585264/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/img/link_logo.png"
+                  className="h-full w-auto object-contain p-8"
+                />
+              </a>
+            </div>
+
+            <div className="col-span-6 h-[150px] bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] flex justify-center items-center p-8">
+              <a
+                href="https://www.behance.net/adhwaaizat1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/img/behance.svg"
+                  className="h-full w-auto object-contain p-8"
+                />
+              </a>
             </div>
             <div className="col-span-6 h-[150px] bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] flex justify-center items-center p-8">
-              <img
-                src="/img/behance.svg"
-                className="h-full w-auto object-contain"
-              />
-            </div>
-            <div className="col-span-6 h-[150px] bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] flex justify-center items-center p-8">
-              <img
-                src="/img/GitHub_Invertocat_Dark.svg"
-                className="h-full w-auto object-contain"
-              />
+              <a
+                href="https://github.com/boi-git"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/img/github-142-svgrepo-com.svg"
+                  className="h-full w-auto object-contain p-8"
+                />
+              </a>
             </div>
 
             <div className="col-span-6 h-[150px] bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] block lg:hidden ">
@@ -442,7 +491,7 @@ export default function Home() {
           <p className="text-center text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-loose text-muted-foreground md:text-left">
             Built by{" "}
             <a
-              href="https://github.com/BUE221"
+              href="https://github.com/boi-git"
               target="_blank"
               rel="noreferrer"
               className="font-medium underline underline-offset-4"
