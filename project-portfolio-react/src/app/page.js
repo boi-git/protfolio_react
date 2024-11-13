@@ -107,14 +107,19 @@ export default function Home() {
       <div className="w-full px-[16px] sm:px-[32px] lg:px-[200px] pt-8 grid grid-cols-12 gap-8">
         <div className="col-span-12 sm:col-span-12 lg:col-span-6 flex-col justify-start items-start gap-8 inline-flex grid grid-cols-12">
           <div className="col-span-12 sm:col-span-12 lg:col-span-4 grid grid-cols-12 lg:grid-cols-1 sm:grid-cols-12 gap-8">
-            {/* <div className="col-span-12 sm:col-span-12 lg:col-span-4 grid grid-cols-12 gap-8"> */}
             <div className="col-span-6 h-[150px] bg-white rounded-[10px] shadow-xl border border-[#c9c9c9]"></div>
             <div className="col-span-6 h-[150px] bg-white rounded-[10px] shadow-xl border border-[#c9c9c9]"></div>
             <div className="col-span-6 h-[150px] bg-white rounded-[10px] shadow-xl border border-[#c9c9c9]"></div>
+            <div className="col-span-6 h-[150px] bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] block lg:hidden ">
+              <div className="text-[#3a3a3a] text-base font-normal font-['Poppins'] leading-tight justify-center flex h-full items-center">
+                “Deserving is not a thing in competition. <br />
+                You earn it or you don't.”
+              </div>
+            </div>
           </div>
 
-          <div className="h-full col-span-8 flex-col justify-start items-start gap-8 inline-flex">
-            <div className="flex-grow  w-full p-8 bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] flex-col justify-start items-start inline-flex">
+          <div className="h-full col-span-12 sm:col-span-12 lg:col-span-8 flex-col justify-start items-start gap-8 inline-flex">
+            <div className="flex-grow  w-full p-8 bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] flex-col justify-start items-start inline-flex gap-8 lg:gap-0">
               <div className="justify-start items-center gap-8 inline-flex">
                 <div className="w-[150px] h-[150px] bg-[#c9c9c9] rounded-[10px] justify-center items-center flex">
                   <div className="text-[#3a3a3a] text-[15px] font-normal font-['Poppins'] leading-[18px]">
@@ -141,8 +146,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="h-[150px] w-full px-16 py-8 bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] justify-between items-center inline-flex">
-              <div className="grow shrink basis-0 text-[#3a3a3a] text-base font-normal font-['Poppins'] leading-tight justify-center ">
+            <div className="h-[150px] w-full px-16 py-8 bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] justify-between items-center inline-flex hidden lg:block">
+              <div className="text-[#3a3a3a] text-base font-normal font-['Poppins'] leading-tight justify-center flex h-full items-center">
                 “Deserving is not a thing in competition. <br />
                 You earn it or you don't.”
               </div>
@@ -220,7 +225,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full pt-8 justify-start items-center gap-8 inline-flex">
+      <div className="w-full pt-8 justify-start items-center gap-8 inline-flex hidden">
         <div className="h-[650px] px-[200px] flex-grow py-8 bg-black/50 justify-start items-center gap-8 inline-flex grid grid-cols-12">
           <div className="h-full col-span-2 flex-col justify-start items-start gap-8 inline-flex overflow-hidden">
             <div className="w-full flex gap-8 flex-col">
@@ -267,7 +272,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full px-[16px] sm:px-[32px] lg:px-[200px] pt-8 grid grid-cols-12 gap-8">
+      <div className="w-full px-[16px] sm:px-[32px] lg:px-[200px] pt-8 grid grid-cols-12 gap-8 hidden">
         <div className="col-span-12 p-8 bg-white rounded-[10px] shadow border border-[#c9c9c9] justify-between items-center flex">
           <div className="grow shrink basis-0 h-6 justify-start items-start gap-16 flex">
             <div className="text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-normal">
@@ -297,7 +302,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full pt-8 px-[16px] sm:px-[32px] lg:px-[200px] justify-start items-center gap-8 inline-flex">
+      <div className="w-full pt-8 px-[16px] sm:px-[32px] lg:px-[200px] justify-start items-center gap-8 inline-flex hidden">
         <div className="h-[600px] w-full p-4 bg-black/50 rounded-[25px] shadow-xl border border-[#c9c9c9] flex-col justify-end items-center inline-flex">
           <div className="self-stretch justify-between items-center inline-flex">
             <div className="text-center text-white text-xl font-normal font-['Poppins'] leading-normal">
