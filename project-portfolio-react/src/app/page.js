@@ -29,8 +29,8 @@ export default function Home() {
         <div className="h-auto col-span-12 sm:col-span-12 lg:col-span-4 p-8 bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] flex-col justify-start items-start gap-8 inline-flex">
           <div className="self-stretch justify-start items-center gap-8 inline-flex">
             <img
-              className="w-[125px] h-[125px] rounded-full"
-              src="https://via.placeholder.com/125x125"
+              className="w-[125px] h-[125px] rounded-full object-full"
+              src="/img/Aizat_Photo.jpg"
             />
             <div className="grow shrink basis-0 text-[#3a3a3a] text-[31px] font-normal font-['Poppins'] leading-[37.20px]">
               Muhammad Adhwa' Aizat Bin Harun
@@ -47,29 +47,42 @@ export default function Home() {
         </div>
         <div className="col-span-12 sm:col-span-12 lg:col-span-8 flex-col justify-start items-start gap-8 inline-flex w-full">
           <div className="w-full p-8 bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] justify-between items-center inline-flex">
-            <div className="grow shrink basis-0 h-6 justify-start items-start gap-16 flex ">
-              <div className="text-[#3a3a3a] whitespace-nowrap text-xl font-normal font-['Poppins'] leading-normal">
-                UI/UX Designer
-              </div>
-              <div className="text-[#3a3a3a] whitespace-nowrap text-xl font-normal font-['Poppins'] leading-normal">
-                Frontend Developer
-              </div>
-              <div className="text-[#3a3a3a] whitespace-nowrap text-xl font-normal font-['Poppins'] leading-normal">
-                Prototyping
-              </div>
-              <div className="text-[#3a3a3a] whitespace-nowrap text-xl font-normal font-['Poppins'] leading-normal">
-                Portfolio
-              </div>
-              <div className="text-[#3a3a3a] whitespace-nowrap text-xl font-normal font-['Poppins'] leading-normal">
-                UI/UX Designer
-              </div>
-              <div className="text-[#3a3a3a] whitespace-nowrap text-xl font-normal font-['Poppins'] leading-normal">
-                Frontend Developer
+            <div className="overflow-hidden w-full">
+              <div className="marquee flex gap-16">
+                <div className="text-[#3a3a3a] whitespace-nowrap text-xl font-normal font-['Poppins'] leading-normal">
+                  UI/UX Designer
+                </div>
+                <div className="text-[#3a3a3a] whitespace-nowrap text-xl font-normal font-['Poppins'] leading-normal">
+                  Frontend Developer
+                </div>
+                <div className="text-[#3a3a3a] whitespace-nowrap text-xl font-normal font-['Poppins'] leading-normal">
+                  Prototyping
+                </div>
+                <div className="text-[#3a3a3a] whitespace-nowrap text-xl font-normal font-['Poppins'] leading-normal">
+                  Portfolio
+                </div>
+                <div className="text-[#3a3a3a] whitespace-nowrap text-xl font-normal font-['Poppins'] leading-normal">
+                  UI/UX Designer
+                </div>
+                <div className="text-[#3a3a3a] whitespace-nowrap text-xl font-normal font-['Poppins'] leading-normal">
+                  Frontend Developer
+                </div>
               </div>
             </div>
           </div>
           <div className="w-full h-full justify-start items-start gap-8 grid grid-cols-12">
-            <div className="rounded-[10px] shadow-xl border border-[#c9c9c9] col-span-12 sm:col-span-12 lg:col-span-6 min-h-[240px] sm:min-h-[240px] h-full bg-[url('https://via.placeholder.com/485x240')] bg-cover bg-center"></div>
+            {/* <div className="rounded-[10px] shadow-xl border border-[#c9c9c9] col-span-12 sm:col-span-12 lg:col-span-6 min-h-[240px] sm:min-h-[240px] h-full bg-[url('https://via.placeholder.com/485x240')] bg-cover bg-center" ></div> */}
+            <div className="rounded-[10px] shadow-xl border border-[#c9c9c9] col-span-12 sm:col-span-12 lg:col-span-6 min-h-[240px] sm:min-h-[240px] h-full">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.003451878537!2d101.6772835759836!3d3.093739753488683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4bf235748dd1%3A0xbe8103163b5b12d1!2sThe%20Hermington%20Kuchai%20Lama!5e0!3m2!1sen!2smy!4v1731471207593!5m2!1sen!2smy"
+                width="100%"
+                height="100%"
+                style={{ border: "0" }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
 
             <div className="flex-col justify-center items-start gap-8 inline-flex col-span-12 sm:col-span-12 lg:col-span-6">
               <div className="self-stretch p-8 bg-white rounded-[10px] shadow border border-[#c9c9c9] justify-start items-center inline-flex gap-4">
@@ -81,12 +94,22 @@ export default function Home() {
                     Resume
                   </div>
                 </div>
-
                 <div className="w-10 h-10 relative">
-                  <div className="w-10 h-10 left-0 top-0 absolute bg-[#d9d9d9]" />
+                  <span
+                    className="material-symbols-rounded text-[#3a3a3a]"
+                    style={{ fontSize: "40px" }}
+                  >
+                    visibility
+                  </span>
                 </div>
-                <div className="w-10 h-10 relative">
-                  <div className="w-10 h-10 left-0 top-0 absolute bg-[#d9d9d9]" />
+
+                <div className="w-10 h-10 relative text-[#3a3a3a]">
+                  <span
+                    className="material-symbols-rounded"
+                    style={{ fontSize: "40px" }}
+                  >
+                    download
+                  </span>
                 </div>
               </div>
 
@@ -94,8 +117,13 @@ export default function Home() {
                 <div className="text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-normal">
                   Email
                 </div>
-                <div className="w-10 h-10 relative">
-                  <div className="w-10 h-10 left-0 top-0 absolute bg-[#d9d9d9]" />
+                <div className="w-10 h-10 relative text-[#3a3a3a]">
+                  <span
+                    className="material-symbols-rounded"
+                    style={{ fontSize: "40px" }}
+                  >
+                    mail
+                  </span>
                 </div>
               </div>
             </div>
@@ -107,9 +135,25 @@ export default function Home() {
       <div className="w-full px-[16px] sm:px-[32px] lg:px-[200px] pt-8 grid grid-cols-12 gap-8">
         <div className="col-span-12 sm:col-span-12 lg:col-span-6 flex-col justify-start items-start gap-8 inline-flex grid grid-cols-12">
           <div className="col-span-12 sm:col-span-12 lg:col-span-4 grid grid-cols-12 lg:grid-cols-1 sm:grid-cols-12 gap-8">
-            <div className="col-span-6 h-[150px] bg-white rounded-[10px] shadow-xl border border-[#c9c9c9]"></div>
-            <div className="col-span-6 h-[150px] bg-white rounded-[10px] shadow-xl border border-[#c9c9c9]"></div>
-            <div className="col-span-6 h-[150px] bg-white rounded-[10px] shadow-xl border border-[#c9c9c9]"></div>
+            <div className="col-span-6 h-[150px] bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] flex justify-center items-center p-8">
+              <img
+                src="/img/link_logo.png"
+                className="h-full w-auto object-contain"
+              />
+            </div>
+            <div className="col-span-6 h-[150px] bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] flex justify-center items-center p-8">
+              <img
+                src="/img/behance.svg"
+                className="h-full w-auto object-contain"
+              />
+            </div>
+            <div className="col-span-6 h-[150px] bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] flex justify-center items-center p-8">
+              <img
+                src="/img/GitHub_Invertocat_Dark.svg"
+                className="h-full w-auto object-contain"
+              />
+            </div>
+
             <div className="col-span-6 h-[150px] bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] block lg:hidden ">
               <div className="text-[#3a3a3a] text-base font-normal font-['Poppins'] leading-tight justify-center flex h-full items-center">
                 “Deserving is not a thing in competition. <br />
@@ -119,24 +163,61 @@ export default function Home() {
           </div>
 
           <div className="h-full col-span-12 sm:col-span-12 lg:col-span-8 flex-col justify-start items-start gap-8 inline-flex">
-            <div className="flex-grow  w-full p-8 bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] flex-col justify-start items-start inline-flex gap-8 lg:gap-0">
-              <div className="justify-start items-center gap-8 inline-flex">
-                <div className="w-[150px] h-[150px] bg-[#c9c9c9] rounded-[10px] justify-center items-center flex">
-                  <div className="text-[#3a3a3a] text-[15px] font-normal font-['Poppins'] leading-[18px]">
-                    Tech
+            <div className="flex-grow  w-full p-8 bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] flex-col justify-start items-start inline-flex gap-8 lg:gap-0 overflow-hidden">
+              {/* <div className="justify-start items-center gap-8 inline-flex"> */}
+              <div className="overflow-hidden justify-start items-center gap-8 inline-flex">
+                <div className="marquee flex gap-8">
+                  <div className="w-[150px] h-[150px] bg-[#c9c9c9] rounded-[10px] justify-center items-center flex">
+                    <div className="flex justify-center items-center p-10">
+                      <img
+                        src="/img/Figma.svg"
+                        className="h-full w-auto object-contain"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div className=" w-[150px] h-[150px] bg-[#c9c9c9] rounded-[10px] justify-center items-center flex">
-                  <div className="text-[#3a3a3a] text-[15px] font-normal font-['Poppins'] leading-[18px]">
-                    Tech
+                  <div className="w-[150px] h-[150px] bg-[#c9c9c9] rounded-[10px] justify-center items-center flex">
+                    <div className="flex justify-center items-center p-10">
+                      <img
+                        src="/img/Flutter.svg"
+                        className="h-full w-auto object-contain"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div className="w-[150px] h-[150px] bg-[#c9c9c9] rounded-[10px] justify-center items-center flex">
-                  <div className="text-[#3a3a3a] text-[15px] font-normal font-['Poppins'] leading-[18px]">
-                    Tech
+                  <div className="w-[150px] h-[150px] bg-[#c9c9c9] rounded-[10px] justify-center items-center flex">
+                    <div className="flex justify-center items-center p-10">
+                      <img
+                        src="/img/Larave.svg"
+                        className="h-full w-auto object-contain"
+                      />
+                    </div>
+                  </div>
+                  <div className="w-[150px] h-[150px] bg-[#c9c9c9] rounded-[10px] justify-center items-center flex">
+                    <div className="flex justify-center items-center p-10">
+                      <img
+                        src="/img/react-2.svg"
+                        className="h-full w-auto object-contain"
+                      />
+                    </div>
+                  </div>
+                  <div className="w-[150px] h-[150px] bg-[#c9c9c9] rounded-[10px] justify-center items-center flex">
+                    <div className="flex justify-center items-center p-10">
+                      <img
+                        src="/img/Tailwind.svg"
+                        className="h-full w-auto object-contain"
+                      />
+                    </div>
+                  </div>
+                  <div className="w-[150px] h-[150px] bg-[#c9c9c9] rounded-[10px] justify-center items-center flex">
+                    <div className="flex justify-center items-center p-10">
+                      <img
+                        src="/img/Vue.svg"
+                        className="h-full w-auto object-contain"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
+
               <div className="flex-grow w-full flex-col justify-end items-start inline-flex">
                 <div className="text-[#3a3a3a] text-[13px] font-normal font-['Poppins'] leading-none">
                   Currently Using
@@ -173,17 +254,17 @@ export default function Home() {
                   Keeklr
                 </div>
                 <div className="text-[#3a3a3a] text-[13px] font-normal font-['Poppins'] leading-none">
-                  Jun 2024 - Present
+                  July 2024 - Present
                 </div>
               </div>
             </div>
             <div className="self-stretch justify-between items-center inline-flex">
               <div className="text-[#3a3a3a] text-[31px] font-normal font-['Poppins'] leading-[37.20px]">
-                UI/UX Designer{" "}
+                Sport Advisor
               </div>
               <div className="flex-col justify-end items-end inline-flex">
                 <div className="text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-normal">
-                  Keeklr
+                  Decathlon
                 </div>
                 <div className="text-[#3a3a3a] text-[13px] font-normal font-['Poppins'] leading-none">
                   Jun 2024 - Present
@@ -192,32 +273,19 @@ export default function Home() {
             </div>
             <div className="self-stretch justify-between items-center inline-flex">
               <div className="text-[#3a3a3a] text-[31px] font-normal font-['Poppins'] leading-[37.20px]">
-                UI/UX Designer{" "}
+                UI/UX Designer & Developer
               </div>
               <div className="flex-col justify-end items-end inline-flex">
                 <div className="text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-normal">
-                  Keeklr
+                  IMT Tech
                 </div>
                 <div className="text-[#3a3a3a] text-[13px] font-normal font-['Poppins'] leading-none">
-                  Jun 2024 - Present
-                </div>
-              </div>
-            </div>
-            <div className="self-stretch justify-between items-center inline-flex">
-              <div className="text-[#3a3a3a] text-[31px] font-normal font-['Poppins'] leading-[37.20px]">
-                UI/UX Designer{" "}
-              </div>
-              <div className="flex-col justify-end items-end inline-flex">
-                <div className="text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-normal">
-                  Keeklr
-                </div>
-                <div className="text-[#3a3a3a] text-[13px] font-normal font-['Poppins'] leading-none">
-                  Jun 2024 - Present
+                  Nov 2023 - May 2024
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex-col w-full text-center justify-center items-center inline-flex">
+          <div className="flex-col w-full text-center justify-center items-center inline-flex hidden">
             <div className="text-[#3a3a3a] text-[25px] font-normal font-['Poppins'] underline leading-[30px]">
               View More
             </div>
