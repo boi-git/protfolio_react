@@ -366,7 +366,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full pt-8 px-[200px] flex flex-col items-center justify-center gap-4 md:h-24 md:flex-row">
+
+      {/* Footer */}
+      <div className="w-full pt-8 px-[16px] sm:px-[32px] lg:px-[200px] flex flex-col items-center justify-center gap-4 md:h-24 md:flex-row">
         <div className="self-stretch w-full px-16 py-8 bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] justify-center items-center inline-flex">
           {" "}
           <p className="text-center text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-loose text-muted-foreground md:text-left">
