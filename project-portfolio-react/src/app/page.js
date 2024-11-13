@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="w-full py-16 bg-white flex-col justify-start items-start inline-flex">
+    <div className="w-full py-8 bg-white flex-col justify-start items-start inline-flex">
       {/*Nav*/}
-      <div className="w-full px-[16px] sm:px-[32px] lg:px-[200px] flex-col justify-center items-center inline-flex">
+      <div className="w-full px-[16px] sm:px-[32px] lg:px-[200px] flex-col justify-center items-center inline-flex hidden">
         <div className="self-stretch px-16 py-8 bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] justify-between items-center inline-flex">
           <div className="text-[#3a3a3a] text-xl font-normal font-['Poppins'] leading-normal">
             Home
@@ -25,7 +25,7 @@ export default function Home() {
       </div>
 
       {/*First Row*/}
-      <div className="w-full px-[16px] sm:px-[32px] lg:px-[200px] pt-8 grid grid-cols-12 gap-8">
+      <div className="w-full px-[16px] sm:px-[32px] lg:px-[200px] grid grid-cols-12 gap-8">
         <div className="h-auto col-span-12 sm:col-span-12 lg:col-span-4 p-8 bg-white rounded-[10px] shadow-xl border border-[#c9c9c9] flex-col justify-start items-start gap-8 inline-flex">
           <div className="self-stretch justify-start items-center gap-8 inline-flex">
             <img
